@@ -1,0 +1,5 @@
+Version 0.0.1:
+- First publication
+
+Next update:
+- Player and enemy statistics
