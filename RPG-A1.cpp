@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : RPG-A1.cpp
 // Author      : The Real MC
-// Version     : 0.0.1
+// Version     : 0.0.2
 // Copyright   : None
 // Description : RPG - The Battle Scene
 //============================================================================
@@ -9,26 +9,30 @@
 #include <iostream>
 using namespace std;
 
+void fight();
+void defend();
+void run();
+
 int main()
 {
-	string command;
+	int command;
 	cout << "1 Thug appears! ";
-	cout << "What will you do?\nFIGHT\nDEFEND\nRUN\nEXIT\n";
+	cout << "What will you do?\n1: FIGHT\n2: DEFEND\n3: RUN\n4: EXIT\n";
 	do {
-		getline (cin,command);
-		if (command == FIGHT)
+		cin >> command;
+		if (command == 1)
 		{
 			fight ();
 		}
-		else if (command == DEFEND)
+		else if (command == 2)
 		{
 			defend ();
 		}
-		else if (command == RUN)
+		else if (command == 3)
 		{
 			run ();
 		}
-		else if (command == EXIT)
+		else if (command == 4)
 		{
 			return 0;
 		}
@@ -36,7 +40,7 @@ int main()
 		{
 			cout << "Invalid response.\n";
 		}
-	} while (command != EXIT);
+	} while (command != 4);
 }
 
 void fight ()

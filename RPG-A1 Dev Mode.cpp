@@ -1,13 +1,18 @@
 //============================================================================
 // Name        : RPG-A1.cpp
 // Author      : The Real MC
-// Version     : 0.0.1
+// Version     : 0.0.2
 // Copyright   : None
 // Description : RPG - The Battle Scene
 //============================================================================
 
 #include <iostream>
+#include <string>
 using namespace std;
+
+void fight ();
+void defend ();
+void run ();
 
 int main()
 {
@@ -16,20 +21,21 @@ int main()
 	cout << "What will you do?\nFIGHT\nDEFEND\nRUN\nEXIT\n";
 	do {
 		getline (cin,command);
-		cout << command;
-		if (command == FIGHT)
+		cout << command << " \n";
+		int strcmp ( const char * str1, const char * str2 );
+		if (command == "FIGHT")
 		{
 			fight ();
 		}
-		else if (command == DEFEND)
+		else if (command == "DEFEND")
 		{
 			defend ();
 		}
-		else if (command == RUN)
+		else if (command == "RUN")
 		{
 			run ();
 		}
-		else if (command == EXIT)
+		else if (command == "EXIT")
 		{
 			return 0;
 		}
@@ -37,7 +43,7 @@ int main()
 		{
 			cout << "Invalid response.\n";
 		}
-	} while (command != EXIT);
+	} while (command != "EXIT");
 }
 
 void fight ()
