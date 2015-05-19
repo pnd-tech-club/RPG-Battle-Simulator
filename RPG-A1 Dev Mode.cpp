@@ -13,19 +13,28 @@ using namespace std;
 void fight ();
 void defend ();
 void run ();
+<<<<<<< HEAD
 
 //Player Stats (currently defunct)
+=======
+>>>>>>> origin/master
 int phealth = 9999;
 int pattack = 255;
 int pdefense = 255;
 int pspeed = 75;
+<<<<<<< HEAD
 
 //Enemy Stats (currently defunct)
+=======
+>>>>>>> origin/master
 int ehealth = 100000;
 int eattack = 100;
 int edefense = 100;
 int espeed = 45;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 int main()
 {
@@ -92,3 +101,17 @@ void run ()
 	cout << "UNDER CONSTRUCTION\n";
 }
 
+<<<<<<< HEAD
+=======
+//player stats
+void pstats ()
+{
+
+}
+
+//enemy stats
+void estats ()
+{
+
+}
+>>>>>>> origin/master
