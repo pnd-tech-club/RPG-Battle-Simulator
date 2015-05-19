@@ -13,8 +13,14 @@ using namespace std;
 void fight ();
 void defend ();
 void run ();
-void pstats ();
-void estats ();
+int phealth = 9999;
+int pattack = 255;
+int pdefense = 255;
+int pspeed = 75;
+int ehealth = 100000;
+int eattack = 100;
+int edefense = 100;
+int espeed = 45;
 
 int main()
 {
@@ -80,17 +86,11 @@ void run ()
 //player stats
 void pstats ()
 {
-	int phealth = 9999;
-	int pattack = 255;
-	int pdefense = 255;
-	int pspeed = 75;
+
 }
 
 //enemy stats
 void estats ()
 {
-	int ehealth = 100000;
-	int eattack = 100;
-	int edefense = 100;
-	int espeed = 45;
+
 }
