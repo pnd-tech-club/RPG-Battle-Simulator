@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : RPG-A1.cpp
 // Author      : The Real MC
-// Version     : 0.0.3a
+// Version     : 0.0.3b
 // Copyright   : None
 // Description : RPG - The Battle Scene
 //============================================================================
@@ -13,12 +13,23 @@ using namespace std;
 void fight ();
 void defend ();
 void run ();
-void pstats ();
-void estats ();
+
+//Player Stats (currently defunct)
+int phealth = 9999;
+int pattack = 255;
+int pdefense = 255;
+int pspeed = 75;
+
+//Enemy Stats (currently defunct)
+int ehealth = 100000;
+int eattack = 100;
+int edefense = 100;
+int espeed = 45;
+
 
 int main()
 {
-	//Player and Enemy Turn Switch
+	//Player and Enemy Turn Switch (currently defunct)
 	//0 = Off
 	//1 = On
 	int pt_switch = 0;
@@ -51,6 +62,10 @@ int main()
 			{
 				return 0;
 			}
+			else if (command == "BIGBOSS")
+			{
+				cout << "Debug Mode under construction. Please understand.\n";
+			}
 			else
 			{
 				cout << "Invalid response.\n";
@@ -77,20 +92,3 @@ void run ()
 	cout << "UNDER CONSTRUCTION\n";
 }
 
-//player stats
-void pstats ()
-{
-	int phealth = 9999;
-	int pattack = 255;
-	int pdefense = 255;
-	int pspeed = 75;
-}
-
-//enemy stats
-void estats ()
-{
-	int ehealth = 100000;
-	int eattack = 100;
-	int edefense = 100;
-	int espeed = 45;
-}

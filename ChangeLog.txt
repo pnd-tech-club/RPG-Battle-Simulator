@@ -13,5 +13,10 @@ Version 0.0.3a (Dev Mode Update):
 - Added: Some comments
 - 96
 
+Version 0.0.3b (Dev Mode Update):
+- Fixed: Player and Enemy Stats 
+	>Stats were not global and caused errors
+	>(Thanks to Henesy for fix)
+
 Next (major) update:
-- Player and enemy statistics
+- (functioning) player and enemy statistics
