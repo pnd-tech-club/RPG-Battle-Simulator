@@ -6,5 +6,12 @@ Version 0.0.2:
 - Fixed: Minor formatting issue in Dev Mode (a new line was not created between the read input and the resulting response)
 - New: RPG A1 now uses numeral input until further notice, as apposed to written input
 
+Version 0.0.3a (Dev Mode Update):
+- Added: Player Stats
+- Added: Enemy Stats
+- Added: Player and Enemy Turn Switchboards
+- Added: Some comments
+- 96
+
 Next (major) update:
 - Player and enemy statistics
